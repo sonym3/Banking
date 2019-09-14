@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#90512DA8"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+
+            android:text="New Balance"
+            android:textColor="#1b0202"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/nbalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#d4d1d1"
+            android:textColor="#1b0202"
+
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="Old Balance"
+            android:textColor="#1b0202"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/obalance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:background="#d4d1d1"
+
+            android:textColor="#1b0202"
+            android:textSize="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_margin="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/exit"
+            android:layout_margin="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#910A0A"
+            android:textColor="#FFF"
+            android:text="go Back"/>
+    </LinearLayout>
+
+</LinearLayout>
