@@ -13,7 +13,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     String old_balance = "5000";
-
+    String stringUserName="mp2";
+    String stringPassword="mp2";
     String new_balance ="0";
     EditText u_name,pass,e_money;
     Button login,add,sub;
@@ -97,9 +98,17 @@ public class MainActivity extends AppCompatActivity {
         login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"Login Success",Toast.LENGTH_SHORT).show();
-                Intent i=new Intent(getApplicationContext(),Main2Activity.class);
-                startActivity(i);
+
+                if(stringUserName.equals(u_name.getText().toString()) && stringPassword.equals(pass.getText().toString()))
+                {
+                    Toast.makeText(getApplicationContext(),"Login Success",Toast.LENGTH_SHORT).show();
+                    Intent i=new Intent(getApplicationContext(),Main2Activity.class);
+                    startActivity(i);
+                }
+                else{
+                    Toast.makeText(getApplicationContext(),"Login not-successful",Toast.LENGTH_SHORT).show();
+                }
+
             }
 
         });
