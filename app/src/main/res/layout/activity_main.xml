@@ -16,14 +16,14 @@
         android:layout_height="43dp"
         android:layout_marginStart="20dp"
         android:layout_marginLeft="20dp"
-        android:layout_marginTop="184dp"
+        android:layout_marginTop="228dp"
         android:layout_marginEnd="20dp"
         android:layout_marginRight="20dp"
         android:hint="Username"
         android:textColorHint="#1b0202"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -33,7 +33,7 @@
         android:layout_height="41dp"
         android:layout_marginStart="31dp"
         android:layout_marginLeft="31dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="31dp"
         android:layout_marginRight="31dp"
         android:hint="Password"
@@ -41,6 +41,7 @@
         android:textColorHint="#1b0202"
         android:textSize="20dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.523"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/uname" />
 
@@ -111,17 +112,36 @@
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="181dp"
-        android:layout_height="132dp"
+        android:layout_width="126dp"
+        android:layout_height="87dp"
         android:layout_marginStart="109dp"
         android:layout_marginLeft="109dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="109dp"
         android:layout_marginRight="109dp"
         android:background="@android:color/transparent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/bank" />
+
+    <TextView
+        android:id="@+id/welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginLeft="162dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginRight="162dp"
+        android:text="Welcome To ScotiaBank"
+        android:textColor="#FF0000"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:fontFamily="@font/montserratmedium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
 </android.support.constraint.ConstraintLayout>
